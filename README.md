@@ -1,5 +1,14 @@
-# FinmorySolution
 # 🧱 Arquitectura del Proyecto: Finmory.API (.NET 8 Web API)
+
+## 🛠️ Tecnologías
+- ASP.NET Core 8
+- Entity Framework Core
+- SQL Server
+- JWT Authentication
+- AutoMapper, FluentValidation
+- Docker-ready
+
+> Esta estructura permite separar claramente responsabilidades, hacer el código más mantenible, escalable y fácil de testear.
 
 Esta es la estructura base de carpetas para el backend del sistema de finanzas personales **Finmory**. Está organizada siguiendo principios de **Clean Architecture** y buenas prácticas de desarrollo moderno.
 
