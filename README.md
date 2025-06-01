@@ -35,3 +35,21 @@ Esta es la estructura base de carpetas para el backend del sistema de finanzas p
 ├── appsettings.json # Configuraciones del entorno (conexión a BD, claves, etc.)
 │
 └── Program.cs / Startup.cs
+
+##Clases
+## 🧱 Resumen Funcional de los Modelos Principales
+
+Este proyecto contiene 8 modelos de entidad principales diseñados para soportar un sistema completo de gestión financiera personal. Cada uno tiene una responsabilidad bien definida:
+
+| Clase              | Responsabilidad                                                                 |
+|--------------------|----------------------------------------------------------------------------------|
+| `User`             | Representa la identidad del usuario, información personal y relaciones con otras entidades. |
+| `FinancialAccount` | Administra los saldos por tipo de cuenta (por ejemplo: Banco, Efectivo, Billetera). |
+| `Category`         | Clasifica las transacciones como `Ingreso` o `Gasto`.                            |
+| `Subcategory`      | Añade más detalle a las categorías (ejemplo: Comida → Rápida, Hogar → Renta).    |
+| `Transaction`      | Registra cada movimiento financiero (ingresos, egresos, compras, etc.).          |
+| `Budget`           | Define límites de gasto por categoría, por mes y año.                            |
+| `FinancialGoal`    | Define metas de ahorro con monto objetivo y fecha estimada de cumplimiento.      |
+| `GoalContribution` | Lleva el historial de aportes realizados hacia una meta financiera.              |
+
+
