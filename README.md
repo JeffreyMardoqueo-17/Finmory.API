@@ -12,7 +12,7 @@
 
 Esta es la estructura base de carpetas para el backend del sistema de finanzas personales **Finmory**. Está organizada siguiendo principios de **Clean Architecture** y buenas prácticas de desarrollo moderno.
 
-/Finmory.API
+ `/Finmory.API
 │
 ├── Controllers/ # Puntos de entrada HTTP (REST endpoints)
 │
@@ -34,7 +34,7 @@ Esta es la estructura base de carpetas para el backend del sistema de finanzas p
 │
 ├── appsettings.json # Configuraciones del entorno (conexión a BD, claves, etc.)
 │
-└── Program.cs / Startup.cs
+└── Program.cs / Startup.cs`
 
 ##Clases
 ## 🧱 Resumen Funcional de los Modelos Principales
@@ -52,4 +52,5 @@ Este proyecto contiene 8 modelos de entidad principales diseñados para soportar
 | `FinancialGoal`    | Define metas de ahorro con monto objetivo y fecha estimada de cumplimiento.      |
 | `GoalContribution` | Lleva el historial de aportes realizados hacia una meta financiera.              |
 
-
+## 🧱 Ciclo de desarrollo (resumen)
+1. Modelo ➤ 2. DTO ➤ 3. Repository ➤ 4. Service ➤ 5. Controller ➤ 6. JWT & Seguridad
