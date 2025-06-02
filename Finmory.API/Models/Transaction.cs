@@ -15,15 +15,16 @@ namespace Finmory.API.Models
         public int UserId { get; set; }
 
         [Required]
-        public int AccountId { get; set; }
+        public int FinancialAccountId { get; set; } // Antes era "AccountId"
 
+        public int CategoryId { get; set; } // Faltaba completamente
         public int? SubcategoryId { get; set; }
 
         [Required]
         public decimal Amount { get; set; }
 
         [Required, MaxLength(10)]
-        public string Type { get; set; } // Income, Expense
+        public string? Type { get; set; } // Income, Expense
 
         [Required]
         public DateTime Date { get; set; }
@@ -36,9 +37,10 @@ namespace Finmory.API.Models
         [MaxLength(500)]
         public string? AttachmentPath { get; set; }
 
+        // 🔗 Navegación
         public User? User { get; set; }
-        public FinancialAccount? Account { get; set; }
+        public FinancialAccount? FinancialAccount { get; set; }
+        public Category? Category { get; set; }
         public Subcategory? Subcategory { get; set; }
     }
-
 }

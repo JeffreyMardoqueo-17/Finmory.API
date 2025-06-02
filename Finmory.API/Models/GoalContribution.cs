@@ -20,7 +20,12 @@ namespace Finmory.API.Models
         [MaxLength(255)]
         public string? Note { get; set; }
 
-        public FinancialGoal Goal { get; set; }
+// 🔗 Navegación
+        public FinancialGoal? FinancialGoal { get; set; }
+        public int FinancialGoalId { get; set; }
+
+        public int UserId { get; set; }
+        public User User { get; set; }
     }
 
 }
