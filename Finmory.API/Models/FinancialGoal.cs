@@ -14,7 +14,7 @@ namespace Finmory.API.Models
         public int UserId { get; set; }
 
         [Required, MaxLength(100)]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         [Required]
         public decimal TargetAmount { get; set; }
@@ -25,7 +25,7 @@ namespace Finmory.API.Models
 
         public User? User { get; set; }
 
-        public ICollection<GoalContribution> Contributions { get; set; }
+         public ICollection<GoalContribution>? Contributions { get; set; }
     }
 
 }

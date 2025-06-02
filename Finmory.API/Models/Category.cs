@@ -22,7 +22,8 @@ namespace Finmory.API.Models
 
         public User? User { get; set; }
 
-        public ICollection<Subcategory> Subcategories { get; set; }
+        public ICollection<Transaction> ?Transactions { get; set; }
+        public ICollection<Budget>? Budgets { get; set; }
     }
 
 }

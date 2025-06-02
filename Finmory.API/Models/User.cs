@@ -2,9 +2,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Finmory.API.Models
 {
-/// <summary>
-/// Represents a registered user in the system, who owns accounts, categories, transactions, budgets, and financial goals.
-/// </summary>
+    /// <summary>
+    /// Represents a registered user in the system, who owns accounts, categories, transactions, budgets, and financial goals.
+    /// </summary>
     public class User
     {
         public int Id { get; set; }
@@ -29,7 +29,12 @@ namespace Finmory.API.Models
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
-        //Navigation properties
-        public ICollection<FinancialAccount>? Accounts { get; set; }
+        //Navigation properties // Relaciones
+    public ICollection<FinancialGoal>? FinancialGoals { get; set; }
+    public ICollection<GoalContribution>? GoalContributions { get; set; }
+    public ICollection<Transaction>? Transactions { get; set; }
+    public ICollection<FinancialAccount>? FinancialAccounts { get; set; }
+    public ICollection<Budget>? Budgets { get; set; }
+
     }
 }

@@ -16,13 +16,13 @@ namespace Finmory.API.Models
         public int UserId { get; set; }
 
         [Required, MaxLength(100)]
-        public string Name { get; set; }
+        public string ?Name { get; set; }
 
         [Required, MaxLength(50)]
-        public string AccountType { get; set; } // Cash, Wallet, Bank
+        public string ?AccountType { get; set; } // Cash, Wallet, Bank
 
         [Required, MaxLength(10)]
-        public string Currency { get; set; }
+        public string ?Currency { get; set; }
 
         [Required]
         public decimal InitialBalance { get; set; }
@@ -30,6 +30,7 @@ namespace Finmory.API.Models
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 
         public User? User { get; set; }
+        public ICollection<Transaction>? Transactions { get; set; }
     }
 
 }
