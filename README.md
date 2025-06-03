@@ -54,3 +54,6 @@ Este proyecto contiene 8 modelos de entidad principales diseñados para soportar
 
 ## 🧱 Ciclo de desarrollo (resumen)
 1. Modelo ➤ 2. DTO ➤ 3. Repository ➤ 4. Service ➤ 5. Controller ➤ 6. JWT & Seguridad
+
+
+2. [Controller] -> [UserService] -> [IUserRepository] -> [UserRepository]
